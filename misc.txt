@@ -1,0 +1,41 @@
+/** <----- Page 2 desired style -----> **/
+
+#page2 {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  padding: 3vw 1.3vw;
+  background-color: red;
+  display: grid;
+  grid-gap: 20px;
+  gap: 20px;
+  grid-template-columns: repeat(12, minmax(0px, 1fr));
+}
+#page2 .sect-head {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: -4px;
+}
+#page2 .sect-head span {
+  grid-column: span 1;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+#page2 .sect-head span:nth-child(2) {
+  text-align: right;
+}
+#page2 .sect-head .span-underline {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+}
+
+#page2 .elem {
+  grid-column: span 4;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+}

@@ -78,11 +78,113 @@ html, body {
   width: 32.3%;
   height: 100%;
   /* background-color: #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
+  position: relative;
 }
 
 #page2 .elem img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+#page2 .elem .shop-box {
+  position: absolute;
+  /* top: 50.5%;
+  left: 50%; */
+  width: 70%;
+  border-radius: 40px;
+  background-color: #f5dfcf;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: all 1s ease;
+}
+#page2 #element2 .shop-box {
+  background-color: #edf3ff;
+}
+#page2 #element3 .shop-box {
+  background-color: white;
+}
+
+
+#page2 .elem .shop-box .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+#page2 .elem .shop-box .container:hover {
+  height: 220px;
+}
+#page2 .elem .shop-box .container:hover .shop-head i {
+  transform: rotate(90deg);
+}
+
+
+.shop-box .container .shop-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.shop-box .container .shop-head i {
+  font-size: 8px;
+  transition: all 0.3s ease;
+}
+.shop-box .container .shop-head i:nth-child(2n) {
+  font-size: 10px;
+}
+.shop-box .container .shop-head h6 {
+  font-size: 12px;
+  font-weight: 550;
+  letter-spacing: -1;
+}
+.shop-box .container .shop-head h6:nth-child(2n) {
+  font-weight: 100;
+}
+
+.shop-box .container #shop-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110%;
+  position: absolute;
+  margin-bottom: 10px;
+  transform: translateY(40%);
+}
+.shop-box .container #shop-body .body-img {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shop-box .container #shop-body img {
+  width: 110px;
+  height: 110px;
+}
+.shop-box .container #shop-body .body-img h6 {
+  font-size: 12px;
+  letter-spacing: -1px;
+  line-height: 10px;
+  text-align: center;
+}
+
+
+
+
+
+#page3 {
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
 }

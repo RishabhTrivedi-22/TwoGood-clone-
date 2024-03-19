@@ -7,6 +7,8 @@ function videoConAnimation() {
   const videoCon = document.querySelector("#vid-container");
   const playBtn = document.querySelector(".play-hover");
 
+ 
+
   videoCon.addEventListener('mouseenter', () => {
     gsap.to(playBtn, {
       opacity: 1,

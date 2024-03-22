@@ -7,7 +7,7 @@ function videoConAnimation() {
   const videoCon = document.querySelector("#vid-container");
   const playBtn = document.querySelector(".play-hover");
 
- 
+
 
   videoCon.addEventListener('mouseenter', () => {
     gsap.to(playBtn, {
@@ -46,3 +46,70 @@ function loadingAnimation() {
   });
 }
 loadingAnimation();
+
+
+function cursorAnimation() {
+  document.addEventListener('mousemove', (dets) => {
+    gsap.to("#cursor", {
+      top: dets.y,
+      left: dets.x
+    });
+  });
+  
+  // * Cursor animation for product-1 =>
+  document.querySelector("#product1").addEventListener('mouseenter', () => {
+    gsap.to("#cursor", {
+      transform: "translate(-50%, -50%) scale(1)",
+      duration: 1,
+      backgroundColor: '#f7f2ec'
+    });
+  });
+  document.querySelector("#product1").addEventListener('mouseleave', () => {
+    gsap.to("#cursor", {
+      transform: "translate(-50%, -50%) scale(0)"
+    });
+  });
+  
+  // * Cursor animation for product-2 =>
+  document.querySelector("#product2").addEventListener('mouseenter', () => {
+    gsap.to("#cursor", {
+      transform: "translate(-50%, -50%) scale(1)",
+      duration: 1,
+      backgroundColor: '#ececec'
+    });
+  });
+  document.querySelector("#product2").addEventListener('mouseleave', () => {
+    gsap.to("#cursor", {
+      transform: "translate(-50%, -50%) scale(0)"
+    });
+  });
+  
+  // * Cursor animation for product-3 =>
+  document.querySelector("#product3").addEventListener('mouseenter', () => {
+    gsap.to("#cursor", {
+      transform: "translate(-50%, -50%) scale(1)",
+      duration: 1,
+      backgroundColor: '#ede6e6'
+    });
+  });
+  document.querySelector("#product3").addEventListener('mouseleave', () => {
+    gsap.to("#cursor", {
+      transform: "translate(-50%, -50%) scale(0)"
+    });
+  });
+  
+  // * Cursor animation for product-4 =>
+  document.querySelector("#product4").addEventListener('mouseenter', () => {
+    gsap.to("#cursor", {
+      transform: "translate(-50%, -50%) scale(1)",
+      duration: 1,
+      backgroundColor: '#d6e0e0'
+    });
+  });
+  document.querySelector("#product4").addEventListener('mouseleave', () => {
+    gsap.to("#cursor", {
+      transform: "translate(-50%, -50%) scale(0)"
+    });
+  });
+}
+cursorAnimation()
